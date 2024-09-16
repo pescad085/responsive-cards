@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card layout that adjusts to different screen sizes</title>
+    <style>
+            .cards-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                justify-items: center;
+                height: 100vh;
+            }
+            .card-1, .card-2, .card-3 {
+                 display: flex;
+                 width: 200px;
+                 height: auto;
+                 border: 2px solid orange;
+                 flex-direction: column;
+
+            }
+            figure img {
+                width: 100px;
+                height: 100px;
+            }
+            figure p {
+                text-align: center;
+                color: yellow;
+                max-width: 200px;
+                word-wrap: break-word;
+
+
+            }
+            body {
+                background-color: black;
+            }
+          .myTitle {
+            color: orange;
+            border: 2px solid orange;
+          }
+
+          /* responsive styling begins here */
+          @media screen and (max-width: 700px) {
+             .cards-container {
+               flex-direction: column;
+             }           
+       
+
+          }
+
+
+    
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+        
+       
+    <div class="cards-container">
+        <h1 class="myTitle">Best Cars</h1>
+        <div class="card-1">
+            <figure>
+                <img src="tourismo.jpg" alt="turismo car">
+                <p>turismo</p>
+            </figure>
+
+        </div>
+        <div class="card-2">
+            <figure>
+                <img src="osiris.jpg" alt="Osiris car">
+                <p>osiris</p>
+            </figure>
+
+        </div>
+
+
+        <div class="card-3">
+            <figure>
+                <img src="./t20.jpg" alt="t20">
+                <p>T-20</p>
+            </figure>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
